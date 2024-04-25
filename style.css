@@ -1,0 +1,78 @@
+body {
+	background-size: 400% 400%;
+	height: 100vh;
+    background-image: url("./assets/image.png");
+}
+
+.nabla {
+    font-family: "Nabla", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+    "EDPT" 100,
+    "EHLT" 12;
+}
+
+.jersey-15-regular {
+    font-family: "Jersey 15", sans-serif;
+    font-style: normal;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
+.PDP {
+    position: absolute;
+    display: grid;
+    top: 0;
+    left: 0;
+    width: fit-content;
+    height: auto;
+    border-radius: 25px 50px;
+    background-color: #ffffff49;
+}
+
+
+.PDP img{
+    position: relative;
+    align-items: center;
+    margin: 20px;
+    width: 250px;
+    border-radius: 50px 25px; 
+}
+
+.name {
+    position: absolute;
+    left: 50%;
+    top: 10%;
+    transform: translate(-50%);
+    font-family: "Jersey 15", system-ui;
+    height: fit-content;
+    width: fit-content;
+    font-size: 80px;
+}
+
+.description {
+    font-family: system-ui;
+    position: relative;
+    padding: 30px;
+    margin: 20px;
+    background-color: #ffffff49;
+    width: fit-content;
+    height: fit-content;
+    top: 30%;
+    left: 22%;
+    border-radius: 25px 50px;
+    font-size: 20px;
+}
