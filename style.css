@@ -19,60 +19,73 @@ body {
     font-style: normal;
 }
 
-@keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
-}
-
-
 .PDP {
     position: absolute;
-    display: grid;
+    display: flex;
+    flex-direction: column;
     top: 0;
     left: 0;
-    width: fit-content;
-    height: auto;
-    border-radius: 25px 50px;
-    background-color: #ffffff49;
+    height: 100vh;
+    margin: 0px;
+    border-radius: 0px 50px 50px 0px;
+    background-color: rgba(214, 214, 214, 0.178);
 }
-
 
 .PDP img{
     position: relative;
     align-items: center;
+    left: auto;
     margin: 20px;
     width: 250px;
+    height: auto;
     border-radius: 50px 25px; 
 }
 
-.name {
-    position: absolute;
-    left: 50%;
-    top: 10%;
-    transform: translate(-50%);
-    font-family: "Jersey 15", system-ui;
-    height: fit-content;
-    width: fit-content;
-    font-size: 80px;
+.PDP .name {
+    position: relative;
+    text-align: center;
+    top: auto;
+    font-size: 46px;
+    font-family: "Jersey 15";
+    color: rgba(0, 0, 0, 0.8);
+    margin: 0px;
+    margin-top: 50px;
 }
 
-.description {
-    font-family: system-ui;
-    position: relative;
-    padding: 30px;
-    margin: 20px;
-    background-color: #ffffff49;
-    width: fit-content;
-    height: fit-content;
-    top: 30%;
-    left: 22%;
-    border-radius: 25px 50px;
+.PDP .alias {
     font-size: 20px;
+    font-family:Arial, Helvetica, sans-serif;
+    position: relative;
+    text-align: center;
+}
+
+.buttn {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 30%;
+}
+
+.PDP button {
+    justify-content: center;
+    font-size: 25px;
+    border: 0px;
+    height: fit-content;
+    margin: 20px;
+    border-radius: 25px;
+    transition: 1s;
+}
+
+.PDP .link {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+button:hover {
+    position: relative;
+    color: white;
+    background-color: blueviolet;
+    /* top: -10px; */
+    /* transform: rotateZ(-10deg); */
+    transform: rotate3d(1, 1, 1, -10deg);
+    box-shadow: 0px 0px 10px rgb(0, 0, 0);
 }
