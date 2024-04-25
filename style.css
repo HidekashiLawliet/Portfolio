@@ -1,6 +1,6 @@
 body {
 	background-size: 400% 400%;
-	height: 100vh;
+	height: 98vh;
     background-image: url("./assets/image.png");
 }
 
@@ -28,13 +28,14 @@ body {
     height: 100vh;
     margin: 0px;
     border-radius: 0px 50px 50px 0px;
-    background-color: rgba(214, 214, 214, 0.178);
+    backdrop-filter: invert(10%);
+    /* background-color: rgba(214, 214, 214, 0.089); */
 }
 
 .PDP img{
     position: relative;
     align-items: center;
-    left: auto;
+    left: 2%;
     margin: 20px;
     width: 250px;
     height: auto;
@@ -50,6 +51,7 @@ body {
     color: rgba(0, 0, 0, 0.8);
     margin: 0px;
     margin-top: 50px;
+    transition: .5s linear;
 }
 
 .PDP .alias {
@@ -72,7 +74,7 @@ body {
     height: fit-content;
     margin: 20px;
     border-radius: 25px;
-    transition: 1s;
+    transition: .5s;
 }
 
 .PDP .link {
@@ -84,8 +86,30 @@ button:hover {
     position: relative;
     color: white;
     background-color: blueviolet;
-    /* top: -10px; */
-    /* transform: rotateZ(-10deg); */
-    transform: rotate3d(1, 1, 1, -10deg);
+    transform: rotate3d(1, 1, 0, 25deg);
     box-shadow: 0px 0px 10px rgb(0, 0, 0);
+}
+
+.PDP .name:hover {
+    margin-top: 50px;
+    transition: .5s;
+    background-size: 200% 200%;
+    animation: gradient 5s ease-in-out infinite;
+}
+
+@keyframes gradient {
+    0% { color: rgb(41, 0, 65); }
+    25% { color: rgb(115, 0, 182); }
+    50% { color: rgb(162, 0, 255); }
+    50% { color: rgb(123, 0, 194); }
+    1000% { color: rgb(41, 0, 65); }
+
+}
+
+.whoAmI {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    color: rgb(255, 239, 187)
 }
