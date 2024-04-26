@@ -38,21 +38,18 @@ form {
     align-items: center;
     width: 300px;
     height: fit-content;
-    margin-top: 50%;
     padding: 20px;
     border: 3px solid #ffffff;
     border-radius: 5px;
 }
 
 form input[type="coreText"] {
-    width: 100%;
-    position: relative;
-    text-align: start;
-    height: 200px;
+    width: 300px;
+    height: fit-content;
     padding: 10px;
-    border: 1px solid #ccc;
     border-radius: 5px;
     margin-bottom: 20px;
+    position: relative;
 }
 
 form input[type="text"],
