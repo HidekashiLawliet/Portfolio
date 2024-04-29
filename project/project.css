@@ -1,5 +1,24 @@
 body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     background-size: 100%;
     height: 100vh;
-    background-image: url("../Portfolio/assets/radiantbg.png");
+    background-image: url("../assets/radiantbg.png");
+    align-items: center;
+    align-content: center;
+}
+
+.container {
+    background-color: rgba(255, 0, 0, 0.432);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-left: 80vh;
+}
+
+.card {
+    background-color: rgba(0, 0, 0, 0.329);
+    margin: 20px;
+    color: white;
+    padding: 20px;
 }
