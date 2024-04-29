@@ -27,6 +27,8 @@ body {
     left: 0;
     height: 100vh;
     margin: 0px;
+    padding-right: 20px;
+    padding-left: 20px;
     border-radius: 0px 50px 50px 0px;
     background-color: rgba(0, 0, 0, 0.37);
 }
@@ -61,10 +63,14 @@ body {
     text-align: center;
 }
 
-.buttn {
+.buttn{
+
+    margin-top: 20%;
+}
+
+.buttn a {
     display: grid;
-    grid-template-columns: 1fr;
-    margin-top: 30%;
+    padding: 20px;
 }
 
 button {
@@ -73,7 +79,6 @@ button {
     font-size: 25px;
     border: 0px;
     height: fit-content;
-    margin: 20px;
     border-radius: 25px;
     transition: .5s;
 }
