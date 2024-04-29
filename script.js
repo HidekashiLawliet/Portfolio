@@ -9,7 +9,7 @@ function typingEffect(element, text, i = 0) {
         i++
         setTimeout(() => {
             typingEffect(element, text, i)
-        }, 300)
+        }, 100)
     }
 }
 

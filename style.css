@@ -1,7 +1,7 @@
 body {
-	background-size: 400% 400%;
+	background-size: 100% 100%;
 	height: 98vh;
-    background-image: url("./assets/image.png");
+    background-image: url("./assets/bg.jpg");
 }
 
 .nabla {
@@ -28,8 +28,7 @@ body {
     height: 100vh;
     margin: 0px;
     border-radius: 0px 50px 50px 0px;
-    backdrop-filter: invert(10%);
-    /* background-color: rgba(214, 214, 214, 0.089); */
+    background-color: rgba(0, 0, 0, 0.37);
 }
 
 .PDP img{
@@ -48,13 +47,14 @@ body {
     top: auto;
     font-size: 46px;
     font-family: "Jersey 15";
-    color: rgba(0, 0, 0, 0.8);
+    color: rgb(226, 226, 226);
     margin: 0px;
     margin-top: 50px;
-    transition: .5s linear;
+    transition: 1s linear;
 }
 
 .PDP .alias {
+    color: rgb(226, 226, 226);
     font-size: 20px;
     font-family:Arial, Helvetica, sans-serif;
     position: relative;
@@ -85,7 +85,7 @@ body {
 button:hover {
     position: relative;
     color: white;
-    background-color: blueviolet;
+    background-color: rgb(174, 0, 255);
     transform: rotate3d(1, 1, 0, 25deg);
     box-shadow: 0px 0px 10px rgb(0, 0, 0);
 }
@@ -101,20 +101,17 @@ a:hover {
 
 .PDP .name:hover {
     margin-top: 50px;
-    transition: .5s;
     background-size: 200% 200%;
     animation: gradient 3s ease-in-out infinite;
 }
 
 @keyframes gradient {
-    0% { color: rgb(41, 0, 65) }
-    25% { color: rgb(115, 0, 182) }
-    50% { color: rgb(162, 0, 255) }
-    50% { color: rgb(123, 0, 194) }
-    1000% { color: rgb(41, 0, 65) }
+    0% { color: rgb(4, 0, 255) }
+    50% { color: rgb(0, 217, 255) }
+    75% { color: rgb(0, 255, 34) }
+    100% { color: rgb(4, 0, 255) }
 
 }
-
 
 .whoAmI {
     font-family:Arial, Helvetica, sans-serif;
@@ -138,7 +135,10 @@ a:hover {
     top: 30%;
     font-family:Arial, Helvetica, sans-serif;
     font-size: 24px;
-    background-color: rgba(255, 255, 255, 0.199)
+    background-color: rgba(0, 0, 0, 0.37);
+    border-radius: 50px 50px 50px 50px;
+    padding: 20px;
+    padding-bottom: 0px;
 }
 
 .job {
@@ -153,5 +153,7 @@ a:hover {
     top: 50%;
     font-family:Arial, Helvetica, sans-serif;
     font-size: 24px;
-    background-color: rgba(255, 255, 255, 0.199)
+    background-color: rgba(0, 0, 0, 0.37);
+    border-radius: 50px 50px 50px 50px;
+    padding: 20px;
 }

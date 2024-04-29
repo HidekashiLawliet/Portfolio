@@ -10,14 +10,25 @@
     </head>
     <body>
         <div class="formulaire">
+            <p class="title">Contact me</p>
             <form action="https://formsubmit.co/6bf14b3673b408ac5e07759c141a7a2c" method="POST">
-                <input type="email" name="email" required placeholder="yourEmail@exemple.com">
-                <input type="text" name="name" required placeholder="John Doe">
-                <input type="text" name="_subject" required placeholder="Subject">
-                <input type="coreText" name="Core" required placeholder="Write your message here">
-                <input type="hidden" name="_next" value="http://127.0.0.1:5500/Portfolio/Portfolio/contact/thanks/thanks.html">
-                <button type="submit">Send</button>
-            </form> 
+                <div class="identity">
+                    <div class="boxText"> email:
+                        <input type="email" name="email" required placeholder="yourEmail@exemple.com">
+                    </div>
+                    <div class="boxText"> name:
+                        <input type="name" name="name" required placeholder="John Doe">
+                    </div>
+                </div>
+                <div class="boxText"> object:
+                    <input type="text" class="object" name="subject" placeholder="Object of your mail">
+                </div>
+                <div class="boxText"> Message:
+                    <textarea class="coreText" name="message"></textarea>
+                </div>
+                <input type="hidden" name="_next" value="http://127.0.0.1:5500/Portfolio/Portfolio/index.html">
+                <input type="hidden" name="_captcha" value="false">
+                <button type="submit" class="submit" >Send</button>
         </div>
         <script src="contact.js" async defer></script>
     </body>
