@@ -110,3 +110,29 @@ form {
     grid-gap: 15px;
     padding: 10px;
 }
+
+.loadingContainer {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    display: none;
+    height: auto;
+    margin: 0px;
+    padding: 20px;
+    border-radius: 50px;
+    background-color: rgba(224, 224, 224, 0.671);
+    z-index: 100;
+}
+
+.loading {
+    position: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
