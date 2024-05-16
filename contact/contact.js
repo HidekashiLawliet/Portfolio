@@ -23,7 +23,6 @@ function loading() {
     const nameValue = name.value.trim();
     const messageValue = message.value.trim();
     const objectValue = object.value.trim();
-    // return;
     if (ValidateEmail(email) === false) {
         console.log("Email is not valid");
         return;
