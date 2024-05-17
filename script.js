@@ -15,3 +15,8 @@ function typingEffect(element, text, i = 0) {
 
 typingEffect(wai, waiText);
 typingEffect(name, nameText);
+
+
+if (isEmailSend === true) {
+    windows.alert('Your mail as been successfully sent');
+};

@@ -15,7 +15,7 @@
     <a href="../" onclick="home"><img src="../assets/home.svg" class="home"></a>
     <div class="formulaire">
         <p class="title">Contact me</p>
-        <form action="https://formsubmit.co/6bf14b3673b408ac5e07759c141a7a2c" method="POST">
+        <form method="POST" action="https://formsubmit.co/6bf14b3673b408ac5e07759c141a7a2c">
             <div class="identity">
                 <div class="boxText"> email:
                     <input class="email" type="email" name="email" required placeholder="yourEmail@exemple.com">
@@ -31,8 +31,10 @@
                 <textarea class="coreText" name="message"></textarea>
             </div>
             <input type="hidden" name="_captcha" value="false">
-            <input type="hidden" name="_next" value="../index.html">
+            <input type="text" name="_honey" style="display:none">
+            <input type="hidden" name="_next" value="https://hidekashilawliet.github.io/Portfolio/index.html">
             <button type="submit" class="submit" onclick="loading()">Send</button>
+        </form>
     </div>
 
     <div class="loadingContainer">

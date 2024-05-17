@@ -36,10 +36,9 @@ function loading() {
         loadingContainer.style.display = 'block';
         console.log(emailValue);
     }
-}
-
-if (isEmailSend === true) {
-    windows.alert('Your mail as been successfully sent');
-} else {
-    window.alert(`Sorry a problem as occured and your mail didn't upload.`);
+    if (isEmailSend === true) {
+        windows.alert('Your mail as been successfully sent');
+    } else {
+        window.alert(`Sorry a problem as occured and your mail didn't upload.`);
+    }
 }
